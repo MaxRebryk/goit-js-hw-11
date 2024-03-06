@@ -1,11 +1,5 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
+
 @import url('./reset.css');
-@import url('./vite-promo.css');
 @import url('./header.css');
 
 :root {
@@ -22,4 +16,31 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+.search-btn{
+  color: #FFFFFF;
+  border-radius: 8px;
+  background: #4E75FF;
+  border: 0px;
+  padding: 8px 16px;
+  width: 91px;
+  height: 40px;
+
+}
+
+.search-btn:hover{
+  background: #6C8CFF;
+}
+
+.search-input{
+  width: 272px;
+  height: 40px;
+}
+
+.search-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }

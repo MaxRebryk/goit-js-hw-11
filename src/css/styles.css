@@ -44,3 +44,31 @@
   align-items: center;
   gap: 8px;
 }
+
+.gallery{
+  display: flex;
+  flex-direction: row;
+  width: 740px;
+}
+
+.gallery-ul{
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  flex-wrap: wrap;
+  
+}
+
+.gallery-item{
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  
+
+
+}
+
+.photo-img{
+  width: 360px;
+  height: 200px;
+}

@@ -32,7 +32,7 @@ searchButton.addEventListener("click", (event) =>{
         
     }
     else{
-        showLoader(;
+        showLoader();
         httpFunc.fetchImages(searchWord)
         .then((images) => {
             hideLoader();

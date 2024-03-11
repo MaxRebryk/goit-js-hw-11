@@ -21,7 +21,6 @@ function hideLoader() {
 searchButton.addEventListener("click", (event) =>{
     event.preventDefault();
     render.clearGalleryHtml();
-    showLoader();
     const searchWord =  searchInput.value;
     if(searchInput.value === ""){
         iziToast.show({
@@ -33,7 +32,7 @@ searchButton.addEventListener("click", (event) =>{
         
     }
     else{
-        
+        showLoader();
         httpFunc.fetchImages(searchWord)
         .then((images) => {
             hideLoader();
